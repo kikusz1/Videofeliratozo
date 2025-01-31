@@ -81,6 +81,7 @@ select {
     overflow-x: auto; /* Vízszintes görgetés engedélyezése */
     overflow-y: hidden; /* Függőleges görgetés tiltása */
     scroll-snap-type: x mandatory; /* "Pattintós" görgetés engedélyezése */
+    margin-bottom: 20px; /* Távolság a képek és a szöveg között */
 }
 
 .image-container img {
@@ -88,6 +89,10 @@ select {
     height: auto; /* Képek magasságának automatikus beállítása */
     margin-right: 10px; /* Képek közötti térköz beállítása */
     scroll-snap-align: start; /* Képek igazítása a görgetés kezdetéhez */
+}
+
+.bemutato-szoveg {
+    /* Itt adhatod meg a bemutató szöveg stílusát */
 }
 .image-container {
     transition: scroll-left 0.3s ease; /* 0.3 másodperces átmenet a görgetéshez */
