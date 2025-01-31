@@ -20,7 +20,6 @@ imageContainer.addEventListener('mouseup', () => {
 
 imageContainer.addEventListener('mousemove', (e) => {
     if (!isDragging || throttled) return;
-    e.preventDefault();
 
     throttled = true;
     const x = e.pageX - imageContainer.offsetLeft;
