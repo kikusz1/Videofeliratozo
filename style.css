@@ -79,6 +79,7 @@ select {
 .image-container {
     display: flex;
     overflow-x: auto; /* Vízszintes görgetés engedélyezése */
+    overflow-y: hidden; /* Függőleges görgetés tiltása */
     scroll-snap-type: x mandatory; /* "Pattintós" görgetés engedélyezése */
 }
 
