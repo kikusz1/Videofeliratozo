@@ -75,6 +75,7 @@ select {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 .image-container {
     display: flex;
     overflow-x: auto; /* Vízszintes görgetés engedélyezése */
@@ -82,7 +83,7 @@ select {
 }
 
 .image-container img {
-    width: 300px; /* Képek szélességének beállítása */
+    width: 50%; /* Képek szélességének beállítása 50%-ra */
     height: auto; /* Képek magasságának automatikus beállítása */
     margin-right: 10px; /* Képek közötti térköz beállítása */
     scroll-snap-align: start; /* Képek igazítása a görgetés kezdetéhez */
