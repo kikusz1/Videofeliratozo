@@ -91,3 +91,6 @@ select {
 .image-container {
     transition: scroll-left 0.3s ease; /* 0.3 másodperces átmenet a görgetéshez */
 }
+.image-container {
+    transform: translate3d(0, 0, 0);
+}
