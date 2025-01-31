@@ -88,3 +88,6 @@ select {
     margin-right: 10px; /* Képek közötti térköz beállítása */
     scroll-snap-align: start; /* Képek igazítása a görgetés kezdetéhez */
 }
+.image-container {
+    transition: scroll-left 0.3s ease; /* 0.3 másodperces átmenet a görgetéshez */
+}
