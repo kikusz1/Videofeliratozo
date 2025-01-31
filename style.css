@@ -75,3 +75,15 @@ select {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+.image-container {
+    display: flex;
+    overflow-x: auto; /* Vízszintes görgetés engedélyezése */
+    scroll-snap-type: x mandatory; /* "Pattintós" görgetés engedélyezése */
+}
+
+.image-container img {
+    width: 300px; /* Képek szélességének beállítása */
+    height: auto; /* Képek magasságának automatikus beállítása */
+    margin-right: 10px; /* Képek közötti térköz beállítása */
+    scroll-snap-align: start; /* Képek igazítása a görgetés kezdetéhez */
+}
