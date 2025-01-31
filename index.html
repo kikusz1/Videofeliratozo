@@ -20,14 +20,40 @@
     <main>
         <section id="bemutatas">
             <h2>Bemutatás</h2>
-            <p>
-                A Videófeliratozó egy ingyenes és könnyen használható program, amely segítségével automatikusan készíthet feliratokat videóihoz.
-            </p>
             <div class="image-container">
                 <img src="Screenshot 2025-01-31 191129.png" alt="Videófeliratozó képernyőkép 1">
                 <img src="Screenshot 2025-01-31 184305.png" alt="Videófeliratozó képernyőkép 2">
                 <img src="Screenshot 2025-01-31 191255.png" alt="Videófeliratozó képernyőkép 3">
                 <img src="Screenshot 2025-01-31 191411.png" alt="Videófeliratozó képernyőkép 4">
+            </div>
+            <div class="bemutato-szoveg">
+                <p>A Videófeliratozó egy ingyenes és könnyen használható program, amely segítségével automatikusan készíthet feliratokat videóihoz. Legyen szó akár otthoni videókról, oktatóanyagokról, vagy éppen közösségi média tartalmakról, a Videófeliratozóval pillanatok alatt elláthatja videóit professzionális minőségű feliratokkal.</p>
+                <p><b>Miért jó a Videófeliratozó?</b></p>
+                <ul>
+                    <li><b>Időt takarít meg:</b> A manuális feliratkészítés időigényes és fárasztó feladat lehet. A Videófeliratozóval automatizálhatja ezt a folyamatot, így értékes időt takaríthat meg.</li>
+                    <li><b>Pontos feliratok:</b> A szoftver fejlett algoritmusainak köszönhetően pontos és megbízható feliratokat készít.</li>
+                    <li><b>Könnyen használható:</b> A Videófeliratozó intuitív kezelőfelülettel rendelkezik, így még a kezdők is könnyen elsajátíthatják a használatát.</li>
+                    <li><b>Ingyenes:</b> A Videófeliratozó teljesen ingyenesen letölthető és használható.</li>
+                </ul>
+                <p><b>Milyen problémákra nyújt segítséget a Videófeliratozó?</b></p>
+                <ul>
+                    <li><b>Halláskárosultak számára akadálymentesítés:</b> A feliratok segítségével a halláskárosultak is élvezhetik a videókat.</li>
+                    <li><b>Idegen nyelvű videók megértése:</b> A feliratok megkönnyítik az idegen nyelvű videók megértését.</li>
+                    <li><b>Oktatási célok:</b> A feliratok segíthetnek a tanulóknak a tananyag jobb megértésében.</li>
+                    <li><b>Kereshetőség a videókban:</b> A feliratok szövege kereshetővé válik, így könnyebben megtalálhatók a releváns információk a videókban.</li>
+                </ul>
+                <p><b>Hogyan használd a Videófeliratozót?</b></p>
+                <ol>
+                    <li>Töltsd le és telepítsd a szoftvert a weboldalunkról.</li>
+                    <li>Indítsd el a Videófeliratozót.</li>
+                    <li>Válaszd ki a feliratozni kívánt videót.</li>
+                    <li>Válaszd ki a videó nyelvét.</li>
+                    <li>Kattints a "Feliratok készítése" gombra.</li>
+                    <li>A szoftver automatikusan elkészíti a feliratokat.</li>
+                    <li>Ellenőrizd és szerkeszd a feliratokat, ha szükséges.</li>
+                    <li>Mentsd el a feliratokat a kívánt formátumban.</li>
+                </ol>
+                <p><b>Töltsd le a Videófeliratozót még ma, és élvezd az automatikus feliratkészítés előnyeit!</b></p>
             </div>
         </section>
 
@@ -51,38 +77,38 @@
     </footer>
 
     <script>
-       const imageContainer = document.querySelector('.image-container');
-let isDragging = false;
-let startX = 0;
-let scrollLeft = 0;
-let throttled = false;
+        const imageContainer = document.querySelector('.image-container');
+        let isDragging = false;
+        let startX = 0;
+        let scrollLeft = 0;
+        let throttled = false;
 
-imageContainer.addEventListener('mousedown', (e) => {
-    isDragging = true;
-    startX = e.pageX - imageContainer.offsetLeft;
-    scrollLeft = imageContainer.scrollLeft;
-});
+        imageContainer.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            startX = e.pageX - imageContainer.offsetLeft;
+            scrollLeft = imageContainer.scrollLeft;
+        });
 
-imageContainer.addEventListener('mouseleave', () => {
-    isDragging = false;
-});
+        imageContainer.addEventListener('mouseleave', () => {
+            isDragging = false;
+        });
 
-imageContainer.addEventListener('mouseup', () => {
-    isDragging = false;
-});
+        imageContainer.addEventListener('mouseup', () => {
+            isDragging = false;
+        });
 
-imageContainer.addEventListener('mousemove', (e) => {
-    if (!isDragging || throttled) return;
+        imageContainer.addEventListener('mousemove', (e) => {
+            if (!isDragging || throttled) return;
 
-    throttled = true;
-    const x = e.pageX - imageContainer.offsetLeft;
-    const walk = (x - startX) * 2;
-    imageContainer.scrollLeft = scrollLeft - walk;
+            throttled = true;
+            const x = e.pageX - imageContainer.offsetLeft;
+            const walk = (x - startX) * 2;
+            imageContainer.scrollLeft = scrollLeft - walk;
 
-    setTimeout(() => {
-        throttled = false;
-    }, 16); // 16ms késleltetés (kb. 60 FPS)
-});
+            setTimeout(() => {
+                throttled = false;
+            }, 16); // 16ms késleltetés (kb. 60 FPS)
+        });
     </script>
 </body>
 </html>
