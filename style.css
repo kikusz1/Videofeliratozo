@@ -39,7 +39,7 @@ section {
 }
 
 img {
-    max-width: 100%;
+    max-width: 65%; /* Képek méretének csökkentése (35%-al kisebb) */
     transition: transform 0.3s ease;
 }
 
