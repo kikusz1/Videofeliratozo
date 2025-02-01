@@ -1,9 +1,9 @@
 {
-  "name": "videofeliratozo,
-  "version": "1.0.0",
+  "name": "videofeliratozo",
+  "version": "1.0.0", // Hiányzó vessző hozzáadva
   "scripts": {
-    "build": "next build", // Például: next build || vite build || etc.
-    "start": "next start" // Például: next start || vite preview
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "some-dependency": "^1.0.0"
