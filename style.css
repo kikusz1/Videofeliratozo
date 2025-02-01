@@ -76,13 +76,16 @@ footer {
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    width: 65%; /* Galéria méretének csökkentése (35%-al kisebb) */
+    margin-left: auto;
+    margin-right: auto; /* Középre igazítás */
 }
 
 /* Kép konténerek stílusa */
 .image-container {
     display: flex;
     overflow: hidden; /* Tiltjuk a görgést */
-    width: 100%; /* Teljes szélesség */
+    width: 100%; /* Teljes szélesség a galéria tárolóhoz képest */
     scroll-behavior: smooth; /* Sima görgetés */
 }
 
