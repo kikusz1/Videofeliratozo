@@ -1,5 +1,5 @@
 // Képek közötti navigációt kezelő függvény
-function navigateImages(direction) {
+function scrollGallery(direction) {
     const imageContainer = document.querySelector('.image-container');
     const images = Array.from(imageContainer.children).filter(child => child.tagName === 'IMG');
     const containerWidth = imageContainer.offsetWidth;
@@ -13,17 +13,15 @@ function navigateImages(direction) {
     // Scroll pozíció módosítása
     if (direction === 'left') {
         if (currentScroll === 0) {
-            // Ha az első képen vagyunk, ugrik az utolsóra
-            imageContainer.scroll({ left: (images.length - 1) * imageWidth, behavior: 'smooth' });
-        } else {
-            imageContainer.scroll({ left: currentScroll - imageWidth, behavior: 'smooth' });
+            // Ha az első képen vagyunk, nem történik semmi
+            return;
         }
+        imageContainer.scroll({ left: currentScroll - imageWidth, behavior: 'smooth' });
     } else if (direction === 'right') {
         if (currentScroll >= (images.length - 1) * imageWidth) {
-            // Ha az utolsó képen vagyunk, visszaugrik az elsőre
-            imageContainer.scroll({ left: 0, behavior: 'smooth' });
-        } else {
-            imageContainer.scroll({ left: currentScroll + imageWidth, behavior: 'smooth' });
+            // Ha az utolsó képen vagyunk, nem történik semmi
+            return;
         }
+        imageContainer.scroll({ left: currentScroll + imageWidth, behavior: 'smooth' });
     }
 }
