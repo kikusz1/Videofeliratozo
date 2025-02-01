@@ -96,7 +96,7 @@ footer {
     font-size: 24px;
     padding: 10px;
     cursor: pointer;
-    z-index: 10;
+    z-index: 10; /* Nyilak mindig felül legyenek */
 }
 
 .arrow.left {
@@ -109,4 +109,13 @@ footer {
 
 .arrow:hover {
     background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Győződjünk meg arról, hogy a nyilak soha ne rejtőzzék el */
+.image-container {
+    pointer-events: none; /* Tiltjuk a konténert közvetlenül kattintani */
+}
+
+.arrow {
+    pointer-events: auto; /* Nyilakra engedélyezzük a kattintást */
 }
