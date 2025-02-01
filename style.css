@@ -75,12 +75,14 @@ footer {
     overflow: hidden; /* Tiltjuk a görgést */
     position: relative; /* Abszolút pozícionálás a gombokhoz */
     margin-bottom: 20px;
+    scroll-behavior: smooth; /* Sima görgetés */
 }
 
 .image-container img {
     width: 100%; /* Minden kép teljes szélességű legyen */
     height: auto;
     margin-right: 10px;
+    flex: 0 0 100%; /* Minden kép teljes szélességű legyen */
 }
 
 /* Nyil gombok stílusa */
