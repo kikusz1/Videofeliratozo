@@ -100,3 +100,38 @@ select {
 .image-container {
     transform: translate3d(0, 0, 0);
 }
+.image-container {
+    display: flex;
+    overflow: hidden; /* Tiltjuk a görgés láthatóságát */
+    position: relative; /* Abszolút pozícionálás a gombokhoz */
+}
+
+.image-container img {
+    width: 100%; /* Minden kép teljes szélességű legyen */
+    margin-right: 10px; /* Képek közötti térköz */
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Félátlós háttér */
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10; /* Felül legyen a képeken */
+}
+
+.arrow.left {
+    left: 10px; /* Bal oldali gomb */
+}
+
+.arrow.right {
+    right: 10px; /* Jobb oldali gomb */
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Áttöréses effektus a gombokon */
+}
