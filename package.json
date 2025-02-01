@@ -1,0 +1,14 @@
+{
+  "name": "videofeliratozo,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "next build", // Például: next build || vite build || etc.
+    "start": "next start" // Például: next start || vite preview
+  },
+  "dependencies": {
+    "some-dependency": "^1.0.0"
+  },
+  "devDependencies": {
+    "some-dev-dependency": "^1.0.0"
+  }
+}
