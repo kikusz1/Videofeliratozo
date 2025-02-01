@@ -100,22 +100,13 @@ footer {
 }
 
 .arrow.left {
-    left: 10px;
+    left: 10px; /* Bal oldali nyil fix pozíciója */
 }
 
 .arrow.right {
-    right: 10px;
+    right: 10px; /* Jobb oldali nyil fix pozíciója */
 }
 
 .arrow:hover {
     background-color: rgba(0, 0, 0, 0.7);
-}
-
-/* Győződjünk meg arról, hogy a nyilak soha ne rejtőzzék el */
-.image-container {
-    pointer-events: none; /* Tiltjuk a konténert közvetlenül kattintani */
-}
-
-.arrow {
-    pointer-events: auto; /* Nyilakra engedélyezzük a kattintást */
 }
