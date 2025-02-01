@@ -6,8 +6,8 @@
     "start": "next start"
   },
   "dependencies": {
-    "some-dependency": "^1.0.0"
-  },
+  "some-dependency": "2.5.1"
+},
   "devDependencies": {
     "some-dev-dependency": "^1.0.0"
   }
