@@ -36,24 +36,16 @@ function scrollGallery(direction) {
 
     // Várakozás a sima görgetés befejeződésére, majd középre igazítjuk
     setTimeout(() => {
-        centerCurrentImage();
+        centerCurrentImage(newScroll, imageWidth, containerWidth);
     }, 500); // Az időtartamot a scroll sebességétől függően kell igazítani
 }
 
 // Aktuális kép középre helyezése
-function centerCurrentImage() {
+function centerCurrentImage(scrollPosition, imageWidth, containerWidth) {
     const imageContainer = document.querySelector('.image-container');
-    const images = Array.from(imageContainer.children).filter(child => child.tagName === 'IMG');
-    const containerWidth = imageContainer.offsetWidth;
-
-    // Aktuális pozíció kiszámítása
-    let currentScroll = imageContainer.scrollLeft;
-
-    // Egy kép szélessége (minden kép ugyanolyan széles)
-    const imageWidth = images[0].offsetWidth;
 
     // Aktuális kép indexe
-    const currentIndex = Math.round(currentScroll / imageWidth);
+    const currentIndex = Math.round(scrollPosition / imageWidth);
 
     // Új pozíció kiszámítása, hogy a kép középre kerüljön
     const newScroll = currentIndex * imageWidth + (containerWidth - imageWidth) / 2;
