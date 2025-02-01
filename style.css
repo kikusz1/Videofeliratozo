@@ -1,5 +1,4 @@
-/* style.css */
-
+/* Általános stílusok */
 body {
     font-family: sans-serif;
     margin: 0;
@@ -76,41 +75,21 @@ select {
     border-radius: 5px;
 }
 
-.image-container {
-    display: flex;
-    overflow-x: auto; /* Vízszintes görgetés engedélyezése */
-    overflow-y: hidden; /* Függőleges görgetés tiltása */
-    scroll-snap-type: x mandatory; /* "Pattintós" görgetés engedélyezése */
-    margin-bottom: 20px; /* Távolság a képek és a szöveg között */
-}
-
-.image-container img {
-    width: 50%; /* Képek szélességének beállítása 50%-ra */
-    height: auto; /* Képek magasságának automatikus beállítása */
-    margin-right: 10px; /* Képek közötti térköz beállítása */
-    scroll-snap-align: start; /* Képek igazítása a görgetés kezdetéhez */
-}
-
-.bemutato-szoveg {
-    /* Itt adhatod meg a bemutató szöveg stílusát */
-}
-.image-container {
-    transition: scroll-left 0.3s ease; /* 0.3 másodperces átmenet a görgetéshez */
-}
-.image-container {
-    transform: translate3d(0, 0, 0);
-}
+/* Kép konténerek stílusa */
 .image-container {
     display: flex;
     overflow: hidden; /* Tiltjuk a görgés láthatóságát */
     position: relative; /* Abszolút pozícionálás a gombokhoz */
+    margin-bottom: 20px; /* Távolság a képek és a szöveg között */
 }
 
 .image-container img {
     width: 100%; /* Minden kép teljes szélességű legyen */
+    height: auto; /* Képek magasságának automatikus beállítása */
     margin-right: 10px; /* Képek közötti térköz */
 }
 
+/* Nyil gombok stílusa */
 .arrow {
     position: absolute;
     top: 50%;
