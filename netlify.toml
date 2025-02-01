@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build" # Vagy a build parancsod
+  publish = "public"       # A kiépítési könyvtár
+
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/"
+  status = 200
