@@ -69,24 +69,18 @@ footer {
     text-align: center;
 }
 
-select {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
 /* Kép konténerek stílusa */
 .image-container {
     display: flex;
-    overflow: hidden; /* Tiltjuk a görgés láthatóságát */
+    overflow: hidden; /* Tiltjuk a görgést */
     position: relative; /* Abszolút pozícionálás a gombokhoz */
-    margin-bottom: 20px; /* Távolság a képek és a szöveg között */
+    margin-bottom: 20px;
 }
 
 .image-container img {
     width: 100%; /* Minden kép teljes szélességű legyen */
-    height: auto; /* Képek magasságának automatikus beállítása */
-    margin-right: 10px; /* Képek közötti térköz */
+    height: auto;
+    margin-right: 10px;
 }
 
 /* Nyil gombok stílusa */
@@ -94,23 +88,23 @@ select {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5); /* Félátlós háttér */
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
     font-size: 24px;
     padding: 10px;
     cursor: pointer;
-    z-index: 10; /* Felül legyen a képeken */
+    z-index: 10;
 }
 
 .arrow.left {
-    left: 10px; /* Bal oldali gomb */
+    left: 10px;
 }
 
 .arrow.right {
-    right: 10px; /* Jobb oldali gomb */
+    right: 10px;
 }
 
 .arrow:hover {
-    background-color: rgba(0, 0, 0, 0.7); /* Áttöréses effektus a gombokon */
+    background-color: rgba(0, 0, 0, 0.7);
 }
