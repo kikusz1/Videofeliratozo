@@ -76,9 +76,9 @@ footer {
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-    width: 65%; /* Galéria méretének csökkentése (35%-al kisebb) */
-    margin-left: auto;
-    margin-right: auto; /* Középre igazítás */
+    width: 85%; /* Galéria méretének csökkentése (35%-al kisebb) */
+    margin-left: center;
+    margin-right: center; /* Középre igazítás */
 }
 
 /* Kép konténerek stílusa */
