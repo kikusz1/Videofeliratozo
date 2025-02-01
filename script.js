@@ -13,15 +13,17 @@ function scrollGallery(direction) {
     // Scroll pozíció módosítása
     if (direction === 'left') {
         if (currentScroll === 0) {
-            // Ha az első képen vagyunk, nem történik semmi
-            return;
+            // Ha az első képen vagyunk, ugrik az utolsóra
+            imageContainer.scroll({ left: (images.length - 1) * imageWidth, behavior: 'smooth' });
+        } else {
+            imageContainer.scroll({ left: currentScroll - imageWidth, behavior: 'smooth' });
         }
-        imageContainer.scroll({ left: currentScroll - imageWidth, behavior: 'smooth' });
     } else if (direction === 'right') {
         if (currentScroll >= (images.length - 1) * imageWidth) {
-            // Ha az utolsó képen vagyunk, nem történik semmi
-            return;
+            // Ha az utolsó képen vagyunk, visszaugrik az elsőre
+            imageContainer.scroll({ left: 0, behavior: 'smooth' });
+        } else {
+            imageContainer.scroll({ left: currentScroll + imageWidth, behavior: 'smooth' });
         }
-        imageContainer.scroll({ left: currentScroll + imageWidth, behavior: 'smooth' });
     }
 }
