@@ -91,7 +91,6 @@ footer {
     height: auto;
     margin-right: 10px;
     flex: 0 0 100%; /* Minden kép teljes szélességű legyen */
-    max-width: 65%; /* Képek méretének korlátozása */
 }
 
 /* Nyil gombok stílusa */
