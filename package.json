@@ -1,14 +1,20 @@
 {
   "name": "videofeliratozo",
   "version": "1.0.0",
+  "description": "Videofeliratozo",
+  "main": "script.js",
   "scripts": {
-    "build": "next build",
-    "start": "next start"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "some-dependency": "*"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kikusz1/Videofeliratozo.git"
   },
-  "devDependencies": {
-    "some-dev-dependency": "^1.0.0"
-  }
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kikusz1/Videofeliratozo/issues"
+  },
+  "homepage": "https://github.com/kikusz1/Videofeliratozo#readme"
 }
