@@ -1,6 +1,6 @@
 {
   "name": "videofeliratozo",
-  "version": "1.0.0", // Hiányzó vessző hozzáadva
+  "version": "1.0.0",
   "scripts": {
     "build": "next build",
     "start": "next start"
