@@ -69,12 +69,20 @@ footer {
     text-align: center;
 }
 
+/* Galéria tároló stílusa */
+.gallery-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
 /* Kép konténerek stílusa */
 .image-container {
     display: flex;
     overflow: hidden; /* Tiltjuk a görgést */
-    position: relative; /* Abszolút pozícionálás a gombokhoz */
-    margin-bottom: 20px;
+    width: 100%; /* Teljes szélesség */
     scroll-behavior: smooth; /* Sima görgetés */
 }
 
