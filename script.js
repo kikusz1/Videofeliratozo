@@ -23,4 +23,7 @@ function navigateImages(direction) {
             // Ha az utolsó képen vagyunk, visszaugrik az elsőre
             imageContainer.scroll({ left: 0, behavior: 'smooth' });
         } else {
-            imageContainer.scroll({
+            imageContainer.scroll({ left: currentScroll + imageWidth, behavior: 'smooth' });
+        }
+    }
+}
